@@ -236,7 +236,7 @@ nav {
 
 .wrapper .static-txt {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -250,7 +250,7 @@ nav {
 .dynamic-txt li {
   list-style: none;
   color: rgb(253 224 71);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   position: relative;
   top: 0;
@@ -278,7 +278,7 @@ nav {
   background: #0D2438;
   border-left: 2px solid rgb(253 224 71);
   animation: typing 3s steps(10) infinite;
-  top: 3px;
+  top: 2px;
 }
 
 @keyframes typing {
