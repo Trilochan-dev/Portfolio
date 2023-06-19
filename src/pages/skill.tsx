@@ -46,7 +46,7 @@ export default function Skills() {
                 { name: "git", link: "./Images/svg/git.svg" },
                 { name: "docker", link: "./Images/svg/docker.svg" },
                 { name: "graphql", link: "./Images/svg/graphql.svg" },
-                { name: "elasticsearch", link: "./Images/svg/elasticsearch.svg" },
+                { name: "elastic search", link: "./Images/svg/elasticsearch.svg" },
                 { name: "cypress", link: "./Images/svg/cypress.svg" },
                 { name: "Looker", link: "./Images/svg/looker.svg" },
                 { name: "Pusher", link: "./Images/svg/pusher.svg" },
@@ -67,7 +67,7 @@ export default function Skills() {
                     {
                         skillHeader.map((sm, i) => (
                             <>
-                                <div className={`px-4 py-2 w-60 rounded-lg  shadow-lg shadow-white text-center cursor-pointer mx-4 border-2 border-white ${selectedHeader === sm ? "bg-primary-dark text-white" : "bg-white text-dark hover:bg-gray-200"}`} onClick={() => setSelectedHeader(sm)} key={i}>
+                                <div className={`px-4 py-2 w-48 rounded-lg  shadow-lg shadow-white text-center cursor-pointer mx-4 border-2 border-white ${selectedHeader === sm ? "bg-primary-dark text-white" : "bg-white text-primary-dark hover:bg-gray-200"}`} onClick={() => setSelectedHeader(sm)} key={i}>
                                     {sm}
                                 </div >
                             </>
@@ -91,7 +91,7 @@ export default function Skills() {
                                     {sdata.value.map((svalue, i) => (
                                         <div className="relative test aspect-square rounded-lg group bg-primary-light hover:bg-primary-dark flex flex-col gap-2 h-[75%] items-center justify-center shadow-lg shadow-[#8e8e8e] uppercase cursor-pointer" key={svalue.name + i}>
                                             <img src={svalue.link} className='h-[60%] w-[60%] group-hover:hidden' />
-                                            <p className='absolute text-xs md:text-sm group-hover:text-white group-hover:block hidden'>{svalue.name}</p>
+                                            <p className='absolute text-xs md:text-sm group-hover:text-white group-hover:block hidden break-words text-center'>{svalue.name}</p>
                                         </div>
                                     ))}
                                 </div>
