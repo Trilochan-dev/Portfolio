@@ -1,8 +1,11 @@
+import Link from 'next/link';
+import CVButton from "../widgets/CVButton"
 import { IoLogoGithub, IoLogoWhatsapp } from 'react-icons/io';
 import { GrLinkedinOption } from 'react-icons/gr';
-import { MdWifiCalling, MdOutgoingMail } from 'react-icons/md';
-import CVButton from "../widgets/CVButton"
-import Link from 'next/link';
+import { MdOutgoingMail } from 'react-icons/md';
+import { TbCertificate } from 'react-icons/tb';
+import { MdCall } from 'react-icons/md';
+
 
 export default function AboutMe() {
     const personalDetails = [
@@ -20,7 +23,7 @@ export default function AboutMe() {
                 <p className="indent-16 mt-2 text-gray-300 text-md break-all font-bold">
                     Unleashing my expertise in crafting user-friendly, cutting-edge web applications that precisely align with clients unique requirements. With meticulous attention to detail, I focus on building scalable and high-performance solutions that seamlessly integrate innovative design elements, ensuring an exceptional user experience. My commitment to excellence drives me to deliver bespoke web applications that surpass expectations, blending form and function harmoniously. By harnessing the power of robust technologies and a keen eye for aesthetics, I engineer elegant web solutions that propel businesses forward in the digital landscape. Emphasizing precision, scalability, and performance, I am dedicated to delivering remarkable web experiences that captivate users and contribute to the success of my clients.
                 </p>
-                <CVButton title="Resume" />
+                <CVButton title="My Resume" icon={<TbCertificate />} />
             </div>
             <div className="col-span-2 px-4 border-2 border-white">
                 <p className="text-lg uppercase font-extrabold mt-6 text-white leading-8 col-span-2">Personal Info</p>
@@ -35,7 +38,7 @@ export default function AboutMe() {
                         <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/"><p className='text-blue-500 bg-[#ffffff] rounded-lg p-2'> <GrLinkedinOption /> </p></Link>
                         <Link href="mailto:trilochan97.dev@gmail.com"> <p className='text-red-600 bg-[#ffffff] rounded-lg p-2'> <MdOutgoingMail /> </p></Link>
                         <Link href="https://wa.me/+919583998665"><p className='text-green-300 bg-[#ffffff] rounded-lg p-2'> <IoLogoWhatsapp /></p></Link>
-                        <Link href="tel:+919583998665"><p className='text-cyan-900 bg-[#ffffff] rounded-lg p-2'> <MdWifiCalling /></p></Link>
+                        <Link href="tel:+919583998665"><p className='text-cyan-900 bg-[#ffffff] rounded-lg p-2'> <MdCall /></p></Link>
                         <Link href="https://github.com/Trilochan-dev"><p className='text-black bg-[#ffffff] rounded-lg p-2'> <IoLogoGithub /></p></Link>
                     </div>
                 </div>
