@@ -1,7 +1,7 @@
 import DropDown from "@/components/widgets/Dropdown";
 import { useState } from "react"
 
-export default function skills() {
+export default function Skills() {
     const [selectedHeader, setSelectedHeader] = useState("Frontend");
     const skillHeader = [
         "Frontend", "Backend", "Database", "Others"
