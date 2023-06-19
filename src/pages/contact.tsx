@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { SiHandshake } from 'react-icons/si';
 
-export default function contact() {
+export default function Contact() {
     const [formData, setFormData] = useState({ fullname: "", email: "", message: "" });
     const [errorMsg, setErrorMsg] = useState("");
     const [showSuccessMsg, setShowSuccessMsg] = useState(false);
