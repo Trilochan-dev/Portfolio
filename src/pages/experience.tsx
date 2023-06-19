@@ -1,7 +1,7 @@
 import { useState } from "react"
 import DropDown from "@/components/widgets/Dropdown";
 
-export default function experience() {
+export default function Experience() {
     const [selectedHeader, setSelectedHeader] = useState("Experience");
     const skillHeader = [
         {
