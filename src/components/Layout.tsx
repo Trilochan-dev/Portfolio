@@ -24,8 +24,8 @@ export default function Layout({ children }: any) {
                             animate={{ opacity: 1 }}
                             transition={{
                                 ease: 'easeInOut',
-                                duration: 1.5,
-                                delay: 0.5,
+                                duration: 3,
+                                delay: 0.1,
                             }}
                         >
                             {children}
