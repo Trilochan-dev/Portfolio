@@ -1,4 +1,3 @@
-import { useRouter } from 'next/router';
 import { TbCertificate } from 'react-icons/tb';
 import CVButton from '../widgets/CVButton';
 
@@ -12,7 +11,7 @@ export default function Banner() {
             <p className='font-bold text-2xl text-white'>Hey,</p>
           </div>
           <div className="w-max">
-            <h1 className="w-full text-3xl text-center md:text-start md:text-4xl text-white font-bold">I'm <span className="text-emerald-400">Trilochan Behera</span></h1>
+            <h1 className="w-full text-3xl text-center md:text-start md:text-4xl text-white font-bold">I{"'"}m <span className="text-emerald-400">Trilochan Behera</span></h1>
             <div className="wrapper">
               <div className="static-txt">Experience in</div>
               <ul className="dynamic-txt">
@@ -27,7 +26,7 @@ export default function Banner() {
             </h1> */}
           </div>
           <p className="text-lg font-bold text-gray-400 text-center lg:text-left">
-            I'm a passionate developer creating user-friendly web applications with meticulous attention to detail, scalability, and performance.</p>
+            I{"'"}m a passionate developer creating user-friendly web applications with meticulous attention to detail, scalability, and performance.</p>
           <div className="w-max">
             <h1 className='text-gray-300'>Code. Create. Innovate.</h1>
             <CVButton title="Download CV" icon={<TbCertificate />} />
