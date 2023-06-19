@@ -1,6 +1,7 @@
+import React, { FC, useEffect, useMemo, useRef, useState } from "react";
 import CircleX from "../icon/CircleX";
 import Extend from "../icon/Extend";
-import React, { FC, useEffect, useMemo, useRef, useState } from "react";
+
 
 const DropDown: FC<{
     dataList?: any;
@@ -112,7 +113,7 @@ const DropDown: FC<{
                                     {dataList.map((item:any, index:any) => (
                                         <div
                                             onClick={handleSelect(item[props.value], item[props.label], item)}
-                                            className={`dropdown_label focus:border-0 ${props.labelClass
+                                            className={`dropdown_label hover:bg-gray-400 hover:text-primary-dark focus:border-0 ${props.labelClass
                                                 ? props.labelClass
                                                 : `py-3 px-4 ${item[props.label] === label ? "bg-primary-dark" : "bg-primary-dark"} shadow-lg ${props?.cursor_style ? props?.cursor_style : "cursor-pointer"
                                                 } hover:bg-artisan-grey-15 text-sm`
