@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import { useRouter } from 'next/router';
 import { BsPatchCheckFill } from 'react-icons/bs';
 import AboutMe from '@/components/AllPages/AboutMe';
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 
-export default function about() {
+export default function About() {
     const { asPath } = useRouter();
     const path = asPath.split('/');
     const [section, setSection] = useState(path[path.length - 1]);
