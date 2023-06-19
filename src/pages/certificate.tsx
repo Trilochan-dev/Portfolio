@@ -1,4 +1,4 @@
-export default function certificate() {
+export default function Certificate() {
     const certificate = [
         { name: "React Js", link: "./Images/certificate/react.jpg" },
         { name: "JavaScript", link: "./Images/certificate/javaScript.jpg" },
