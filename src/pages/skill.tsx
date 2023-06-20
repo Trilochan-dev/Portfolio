@@ -46,7 +46,7 @@ export default function Skills() {
                 { name: "git", link: "./Images/svg/git.svg" },
                 { name: "docker", link: "./Images/svg/docker.svg" },
                 { name: "graphql", link: "./Images/svg/graphql.svg" },
-                { name: "elastic search", link: "./Images/svg/elasticsearch.svg" },
+                { name: "elastic", link: "./Images/svg/elasticsearch.svg" },
                 { name: "cypress", link: "./Images/svg/cypress.svg" },
                 { name: "Looker", link: "./Images/svg/looker.svg" },
                 { name: "Pusher", link: "./Images/svg/pusher.svg" },
@@ -63,7 +63,7 @@ export default function Skills() {
         <>
             <div className="absolute inset-0 w-full pb-24 pt-16 bg-primary-light overflow-y-auto hide_scrollbar">
                 <p className="text-3xl text-center font-medium leading-relaxed mb-4 capitalize text-linear-gradient">Technical Skills</p>
-                <div className="py-2 w-fit px-8 max-w-[1180px] m-auto hidden md:flex items-center justify-center shadow-md rounded-lg  ">
+                <div className="py-2 w-fit px-8 max-w-[1180px] m-auto hidden lg:flex items-center justify-center shadow-md rounded-lg  ">
                     {
                         skillHeader.map((sm, i) => (
                             <>
@@ -74,7 +74,7 @@ export default function Skills() {
                         ))
                     }
                 </div>
-                <div className="block md:hidden w-1/2 mx-auto bg-primary-dark h-12 text-white rounded-xl ">
+                <div className="block lg:hidden w-1/2 mx-auto bg-primary-dark h-12 text-white rounded-xl ">
                     <DropDown
                         dataList={skills}
                         label={"key"}

@@ -9,13 +9,13 @@ export default function Contact() {
         e.preventDefault();
         const emailValregex = /^[\w.-]+@[\w.-]+\.[\w.-]+$/;
         if (!formData.fullname.trim()) {
-            setErrorMsg("* Enter your full name");
+            setErrorMsg("Enter your full name");
         } else if (!formData.email.trim()) {
-            setErrorMsg("* Enter your email address");
+            setErrorMsg("Enter your email address");
         } else if (!emailValregex.test((formData.email))) {
-            setErrorMsg("* Enter valid email address");
+            setErrorMsg("Enter valid email address");
         } else if (!formData.message) {
-            setErrorMsg("* Enter your message for me");
+            setErrorMsg("Enter your message for me");
         } else {
             setErrorMsg("");
             setShowSuccessMsg(true);
@@ -37,7 +37,8 @@ export default function Contact() {
                     <div className="contact p-4 m-auto">
                         <p className="text-3xl font-medium text-gray-500 mb-1">Get in touch</p>
                         <p className="text-lg font-medium text-gray-400">My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!</p>
-                        <div className="form flex flex-col gap-4 my-4">
+                        <p className={`text-red-600 text-md font-medium mb-2 ${!errorMsg && "invisible"}`}> * {errorMsg}</p>
+                        <div className="form flex flex-col gap-4 mb-4">
                             <input type="text" className="h-12 w-full px-4 bg-gray-100 rounded-md focus-none outline-none font-medium" placeholder="Full Name *" value={formData?.fullname} onChange={(e) => setFormData({ ...formData, fullname: e.target.value })} />
                             <input type="text" className="h-12 w-full px-4 bg-gray-100 rounded-md focus-none outline-none font-medium" placeholder="Email *" value={formData?.email} onChange={(e) => setFormData({ ...formData, email: e.target.value })} />
                             <textarea rows={24} className="resize  h-40  text-primary-dark p-4 rounded-md focus-none outline-none font-medium bg-gray-100" placeholder="Message *" value={formData?.message} onChange={(e) => setFormData({ ...formData, message: e.target.value })}></textarea>
@@ -48,7 +49,6 @@ export default function Contact() {
                                 <img src="./Images/welcome.gif" alt="" className="h-8 w-8" />
                             </button>
                         </div>
-                        <p className="text-red-600 text-md font-medium "> {errorMsg}</p>
                     </div>
                     <div className="image">
                         <img src="./Images/website.svg" alt="" className="h-full" />

@@ -31,18 +31,24 @@ export default function About() {
                         </div>
 
                         <ul className="hidden md:flex space-x-8 mb-4">
-                            <li>
-                                <span className="font-semibold">2+ Years </span>
-                                Exp.
-                            </li>
-                            <li>
-                                <span className="font-semibold">25+ </span>
-                                Skills
-                            </li>
-                            <li>
-                                <span className="font-semibold">500+  </span>
-                                Connections
-                            </li>
+                            <Link href={"/experience"}>
+                                <li>
+                                    <span className="font-semibold cursor-pointer hover:text-blue-500">2+ Years </span>
+                                    Exp.
+                                </li>
+                            </Link>
+                            <Link href={"/skill"}>
+                                <li>
+                                    <span className="font-semibold cursor-pointer hover:text-blue-500">25+ </span>
+                                    Skills
+                                </li>
+                            </Link>
+                            <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/" target='__blank'>
+                                <li>
+                                    <span className="font-semibold cursor-pointer hover:text-blue-500">500+  </span>
+                                    Connections
+                                </li>
+                            </Link>
                         </ul>
 
                         <div className="hidden md:block">
@@ -63,24 +69,30 @@ export default function About() {
 
                 <div className="px-0 md:px-3">
                     <ul className="flex md:hidden justify-around space-x-8 border-t text-center p-2 text-gray-600 leading-snug text-sm">
-                        <li>
-                            <span className="font-semibold">2+ Years </span>
-                            Exp.
-                        </li>
-                        <li>
-                            <span className="font-semibold">25+ </span>
-                            Skills
-                        </li>
-                        <li>
-                            <span className="font-semibold">500+  </span>
-                            Connections
-                        </li>
+                        <Link href={"/experience"}>
+                            <li>
+                                <span className="font-semibold cursor-pointer hover:text-blue-500">2+ Years </span>
+                                Exp.
+                            </li>
+                        </Link>
+                        <Link href={"/skill"}>
+                            <li>
+                                <span className="font-semibold cursor-pointer hover:text-blue-500">25+ </span>
+                                Skills
+                            </li>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/" target='__blank'>
+                            <li>
+                                <span className="font-semibold cursor-pointer hover:text-blue-500">500+  </span>
+                                Connections
+                            </li>
+                        </Link>
                     </ul>
 
                     <ul className="flex items-center justify-around md:justify-center space-x-12 uppercase tracking-widest font-semibold text-xs text-gray-600 border-t">
                         {header.map((h, i) => (
                             <li className={`${section === h.section && "border-t-2 border-gray-700"}  md:-mt-px text-gray-700 cursor-pointer`} key={h.section + i}>
-                                <p className="inline-block p-2 text-linear-gradient text-md" onClick={() => setSection(h.section)}>{h.name}</p>
+                                <p className="inline-block p-2 text-linear-gradient text-lg capitalize" onClick={() => setSection(h.section)}>{h.name}</p>
                             </li>
                         ))}
                     </ul>
