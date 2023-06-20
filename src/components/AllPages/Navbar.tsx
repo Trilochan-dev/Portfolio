@@ -18,12 +18,12 @@ export default function Navbar() {
         <>
             <div className=" flex flex-row justify-between items-center py-4 mx-8 mt-2">
                 <Link href={"/"}> <div className="logo flex items-center">
-                    <div className="bg-white h-8 w-8 text-center rounded-lg m-auto text-2xl font-bold">T</div>
+                    <div className="bg-white h-8 w-8 text-center rounded-lg m-auto text-2xl font-bold text-primary-dark">T</div>
                     <div className="text-2xl font-bold text-white pl-1">rilochan </div>
                 </div>
                 </Link>
 
-                <div className="hire flex gap-4 items-center hidden md:block">
+                <div className="hire  gap-4 items-center hidden lg:flex">
                     <div className=" text-white flex gap-4 lg:gap-6 text-lg font-semibold items-center">
                         {
                             navItem.map((NI, i) => (
@@ -32,7 +32,7 @@ export default function Navbar() {
                         }
                     </div>
                 </div>
-                <div className="block md:hidden">
+                <div className="block lg:hidden">
                     <div className="text-lg uppercase font-bold cursor-pointer ">
                         <MenuBar />
                     </div>

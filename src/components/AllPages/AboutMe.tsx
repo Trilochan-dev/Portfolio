@@ -17,20 +17,20 @@ export default function AboutMe() {
         { key: "Language Known :", value: "English, Hindi, Odia" },
     ]
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-5 bg-primary-dark">
+        <div className="grid grid-cols-1 lg:grid-cols-5 bg-primary-dark divide-y-2 md:divide-x-2 ">
             <div className="image col-span-3 px-4">
                 <p className="text-2xl uppercase font-extrabold mt-8 text-white">My Story</p>
-                <p className="indent-16 mt-2 text-gray-300 text-md break-all font-bold">
+                <p className="indent-16 mt-2 text-gray-300 text-md break-words font-bold">
                     Unleashing my expertise in crafting user-friendly, cutting-edge web applications that precisely align with clients unique requirements. With meticulous attention to detail, I focus on building scalable and high-performance solutions that seamlessly integrate innovative design elements, ensuring an exceptional user experience. My commitment to excellence drives me to deliver bespoke web applications that surpass expectations, blending form and function harmoniously. By harnessing the power of robust technologies and a keen eye for aesthetics, I engineer elegant web solutions that propel businesses forward in the digital landscape. Emphasizing precision, scalability, and performance, I am dedicated to delivering remarkable web experiences that captivate users and contribute to the success of my clients.
                 </p>
                 <CVButton title="My Resume" icon={<TbCertificate />} />
             </div>
-            <div className="col-span-2 px-4 border-2 border-white">
+            <div className="col-span-2 px-4">
                 <p className="text-lg uppercase font-extrabold mt-6 text-white leading-8 col-span-2">Personal Info</p>
                 {personalDetails.map((PD, i) => (
-                    <div className="flex items-center gap-4" key={i}>
-                        <p className="w-[33%] font-bold text-md text-green-200 my-2">{PD.key}</p>
-                        <p className="font-medium text-md text-cyan-200 my-2">{PD.value}</p>
+                    <div className="flex items-center gap-4 " key={i}>
+                        <p className="w-[33%] font-bold text-[12px] xs:text-[14px] sm:text-[14px] md:text-[16px] lg:text-[14px] xl:text-[15px] text-green-200 my-2 whitespace-nowrap">{PD.key}</p>
+                        <p className="font-medium text-[12px] xs:text-[14px] sm:text-[14px] md:text-[16px] lg:text-[14px] xl:text-[15px] text-cyan-200 my-2">{PD.value}</p>
                     </div>
                 ))}
                 <div className="flex justify-between items-center my-8">

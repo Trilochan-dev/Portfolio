@@ -2,6 +2,13 @@ import { TbCertificate } from 'react-icons/tb';
 import CVButton from '../widgets/CVButton';
 
 export default function Banner() {
+  const mernStack = [
+    { name: "mongodb", link: "./Images/svg/mongodb.svg" },
+    { name: "express", link: "./Images/svg/expressjs.svg" },
+    { name: "react", link: "./Images/svg/react.svg" },
+    { name: "react", link: "./Images/svg/node.svg" },
+
+  ]
   return (
     <>
       <div className="lg:flex justify-between py-8 absolute inset-0 w-full m-auto max-w-final overflow-y-auto hide_scrollbar">
@@ -27,6 +34,11 @@ export default function Banner() {
           <div className="w-max">
             <h1 className='text-gray-300 font-bold'>Code. Create. Innovate.</h1>
             <CVButton title="My Resume" icon={<TbCertificate />} />
+          </div>
+          <div className="flex gap-4 items-center ">
+            {mernStack.map((mern, i) => (
+              <img src={mern.link} alt="" className={`w-7 ${i == 1 && "bg-white rounded-full p-1"}`} />
+            ))}
           </div>
         </div>
         <div className="flex justify-center">
