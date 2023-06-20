@@ -37,7 +37,7 @@ export default function Banner() {
           </div>
           <div className="flex gap-4 items-center ">
             {mernStack.map((mern, i) => (
-              <img src={mern.link} alt="" className={`w-7 ${i == 1 && "bg-white rounded-full p-1"}`} />
+              <img src={mern.link} className={`w-7 ${i == 1 && "bg-white rounded-full p-1"}`} key={name+i} />
             ))}
           </div>
         </div>
