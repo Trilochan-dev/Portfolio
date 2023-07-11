@@ -65,7 +65,7 @@ export default function Experience() {
                                 <div className="mb-6 md:mb-8 flex md:justify-between items-center w-full right-timeline">
                                     <div className="order-1 md:w-5/12"></div>
                                     <span className="z-20 flex items-center order-1 justify-center w-6 h-6 md:w-9 md:h-9 bg-violet-200 rounded-full ring-4 md:ring-8 ring-white dark:ring-grey-800 dark:bg-violet-900">
-                                        <img src="./Images/svg/skill.svg" />
+                                        <img src={`./Images/svg/${selectedHeader === "Experience" ? "" : "skill.svg"}`} />
                                     </span>
                                     <div className="order-1 rounded-lg w-full ml-3 md:ml-0 bg-white dark:bg-grey-800 md:w-5/12 p-3 md:px-4 md:py-4" style={{ opacity: 1, transform: "none" }}>
                                         <h3 className="mb-2 font-medium text-lg md:text-xl">Bachelor's of Science (Hons)</h3>
