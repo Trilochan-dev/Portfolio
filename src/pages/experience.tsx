@@ -68,7 +68,7 @@ export default function Experience() {
                                         <img src={`./Images/svg/skill.svg`} />
                                     </span>
                                     <div className="order-1 rounded-lg w-full ml-3 md:ml-0 bg-white dark:bg-grey-800 md:w-5/12 p-3 md:px-4 md:py-4" style={{ opacity: 1, transform: "none" }}>
-                                        <h3 className="mb-2 font-medium text-lg md:text-xl">Bachelor's of Science (Hons)</h3>
+                                        <h3 className="mb-2 font-medium text-lg md:text-xl">{`Bachelor's of Science (Hons)`}</h3>
                                         <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">Alaka Mahavidyalaya, Anantabata, Jagatsinghpur</p>
                                         <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
                                             <li className="mb-0.5">Completed Bachelor degree from Alaka Mahavidyalaya, Anantabata, Jagatsinghpur under Utkal University</li>
