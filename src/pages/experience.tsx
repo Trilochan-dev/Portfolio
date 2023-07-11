@@ -45,7 +45,7 @@ export default function Experience() {
                                     <img src={`./Images/svg/${selectedHeader === "Experience" ? "experience.svg" : "skill.svg"}`} />
                                 </span>
                                 <div className="order-1 rounded-lg w-full ml-3 md:ml-0 bg-white dark:bg-grey-800 md:w-5/12 p-3 md:px-4 md:py-4" style={{ opacity: 1, transform: "none" }}>
-                                    <h3 className="mb-2 font-medium text-lg md:text-xl"> {selectedHeader === "Experience" ? "NetTantra Technologies (HyScaler)" : " Master of Computer Application"}  </h3>
+                                    <h3 className="mb-2 font-medium text-lg md:text-xl text-black"> {selectedHeader === "Experience" ? "NetTantra Technologies (HyScaler)" : " Master of Computer Application"}  </h3>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 font-medium"> {selectedHeader === "Experience" ? "Software developer (Full Stack) | Nov 2021 - Present" : "Ajay Binay Institute of Technology | 2018 - 2021"} </p>
                                     {selectedHeader === "Experience" ?
                                         <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
@@ -67,21 +67,15 @@ export default function Experience() {
                                     <img src={`./Images/svg/${selectedHeader === "Experience" ? "experience.svg" : "skill.svg"}`} />
                                 </span>
                                 <div className="order-1 rounded-lg w-full ml-3 md:ml-0 bg-white dark:bg-grey-800 md:w-5/12 p-3 md:px-4 md:py-4" style={{ opacity: 1, transform: "none" }}>
-                                    <h3 className="mb-2 font-medium text-lg md:text-xl">{selectedHeader === "Experience" ? "Vyaparpage.com" : "Bachelor's of Science (Hons)"}</h3>
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{selectedHeader === "Experience" ? "Software Developer Trainee | Jan 2021 - April 2021" : "Alaka Mahavidyalaya, Anantabata, Jagatsinghpur"}</p>
-                                    {selectedHeader === "Experience" ?
-                                        <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
-                                            <li className="mb-0.5">Creating Responsive web applications</li>
-                                            <li className="mb-0.5">Worked on building the product from scratch and built multiple dashboards.</li>
-                                            <li className="mb-0.5">Skills: HTML · CSS · JavaScript · Bootstrap CSS · MySQL · Laravel</li>
-                                        </ul> :
-                                        <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
+                                    <h3 className="mb-2 font-medium text-lg md:text-xl">{selectedHeader === "Experience" ? "" : "Bachelor's of Science (Hons)"}</h3>
+                                    <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">{selectedHeader === "Experience" ? "" : "Alaka Mahavidyalaya, Anantabata, Jagatsinghpur"}</p>
+                                    {selectedHeader !== "Experience" &&
+                                         <ul className="text-sm text-gray-400 mt-2 ml-4 list-disc">
                                             <li className="mb-0.5">Completed Bachelor degree from Alaka Mahavidyalaya, Anantabata, Jagatsinghpur under Utkal University</li>
                                             <li className="mb-0.5">Secured 75 Percentage</li>
                                             <li className="mb-0.5">Paricipate in some Science exhibition</li>
                                         </ul>
                                     }
-
                                 </div>
                             </div>
                         </div>
