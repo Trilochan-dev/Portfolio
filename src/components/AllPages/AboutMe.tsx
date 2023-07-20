@@ -39,7 +39,7 @@ export default function AboutMe() {
                         <Link href="mailto:trilochan97.dev@gmail.com"> <p className='text-red-600 bg-[#ffffff] rounded-lg p-2'> <MdOutgoingMail /> </p></Link>
                         <Link href="https://wa.me/+919583998665"><p className='text-green-300 bg-[#ffffff] rounded-lg p-2'> <IoLogoWhatsapp /></p></Link>
                         <Link href="tel:+919583998665"><p className='text-cyan-900 bg-[#ffffff] rounded-lg p-2'> <MdCall /></p></Link>
-                        <Link href="https://github.com/Trilochan-dev"><p className='text-black bg-[#ffffff] rounded-lg p-2'> <IoLogoGithub /></p></Link>
+                        <Link href="https://github.com/trilochan-behera-dev"><p className='text-black bg-[#ffffff] rounded-lg p-2'> <IoLogoGithub /></p></Link>
                     </div>
                 </div>
             </div>
