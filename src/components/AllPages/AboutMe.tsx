@@ -10,7 +10,7 @@ import { MdCall } from 'react-icons/md';
 export default function AboutMe() {
     const personalDetails = [
         { key: "Name :", value: "Trilochan Behera" },
-        { key: "Email :", value: "trilochan97.dev@gmail.com" },
+        { key: "Email :", value: "trilochanbeherak@gmail.com" },
         { key: "Phone :", value: "+91-9583998665" },
         { key: "Address :", value: "Bhubaneswar, Odisha, India" },
         { key: "Qualification :", value: "Master of Computer Application" },
@@ -35,8 +35,8 @@ export default function AboutMe() {
                 ))}
                 <div className="flex justify-between items-center my-8">
                     <div className="flex gap-2 h-full text-[#8e8e8e] cursor-pointer">
-                        <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/"><p className='text-blue-500 bg-[#ffffff] rounded-lg p-2'> <GrLinkedinOption /> </p></Link>
-                        <Link href="mailto:trilochan97.dev@gmail.com"> <p className='text-red-600 bg-[#ffffff] rounded-lg p-2'> <MdOutgoingMail /> </p></Link>
+                        <Link href="https://www.linkedin.com/in/trilochanbehera/"><p className='text-blue-500 bg-[#ffffff] rounded-lg p-2'> <GrLinkedinOption /> </p></Link>
+                        <Link href="mailto:trilochanbeherak@gmail.com"> <p className='text-red-600 bg-[#ffffff] rounded-lg p-2'> <MdOutgoingMail /> </p></Link>
                         <Link href="https://wa.me/+919583998665"><p className='text-green-300 bg-[#ffffff] rounded-lg p-2'> <IoLogoWhatsapp /></p></Link>
                         <Link href="tel:+919583998665"><p className='text-cyan-900 bg-[#ffffff] rounded-lg p-2'> <MdCall /></p></Link>
                         <Link href="https://github.com/trilochan-behera-dev"><p className='text-black bg-[#ffffff] rounded-lg p-2'> <IoLogoGithub /></p></Link>
