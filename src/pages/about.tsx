@@ -27,7 +27,7 @@ export default function About() {
                                relative mr-6 text-xl transform -translate-y-1">
                                 <BsPatchCheckFill />
                             </span>
-                            <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/" className="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded text-center sm:inline-block block" target="_blank">Follow</Link>
+                            <Link href="https://www.linkedin.com/in/trilochanbehera/" className="bg-blue-500 px-2 py-1 text-white font-semibold text-sm rounded text-center sm:inline-block block" target="_blank">Follow</Link>
                         </div>
 
                         <ul className="hidden md:flex space-x-8 mb-4">
@@ -43,7 +43,7 @@ export default function About() {
                                     Skills
                                 </li>
                             </Link>
-                            <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/" target='__blank'>
+                            <Link href="https://www.linkedin.com/in/trilochanbehera/" target='__blank'>
                                 <li>
                                     <span className="font-semibold cursor-pointer hover:text-blue-500">500+  </span>
                                     Connections
