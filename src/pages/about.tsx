@@ -52,17 +52,17 @@ export default function About() {
                         </ul>
 
                         <div className="hidden md:block">
-                            <h1 className="font-medium">Mr Trilochan...</h1>
+                            <h1 className="font-medium">Mr Trilochan Behera</h1>
                             <p className='font-bold shadow-2xl'>{`< MERN Developer 🚀/>`}</p>
-                            <span>Learning, Mentoring and Music ...</span>
+                            <span>Coding, Mentoring and Music ...</span>
                         </div>
 
                     </div>
 
                     <div className="md:hidden text-sm my-2">
-                        <h1 className="font-semibold">Mr Trilochan...</h1>
+                        <h1 className="font-semibold">Mr Trilochan Behera</h1>
                         <p className='font-bold shadow-2xl'>{`< MERN Developer 🚀/>`}</p>
-                        <span>Learning, Mentoring and Music ...</span>
+                        <span>Coding, Mentoring and Music ...</span>
                     </div>
 
                 </header>
@@ -81,7 +81,7 @@ export default function About() {
                                 Skills
                             </li>
                         </Link>
-                        <Link href="https://www.linkedin.com/in/trilochan-behera-2179b41a2/" target='__blank'>
+                        <Link href="https://www.linkedin.com/in/trilochanbehera/" target='__blank'>
                             <li>
                                 <span className="font-semibold cursor-pointer hover:text-blue-500">500+  </span>
                                 Connections
