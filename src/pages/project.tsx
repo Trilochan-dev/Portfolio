@@ -12,7 +12,7 @@ export default function Project() {
             title: "Sexual health medicare",
             image: "./Images/project/epiq.jpeg",
             projectFor: "Office",
-            desc: "4hamlet projects based on online telemedicine and a variety of customized treatment plans for men's health.It's a healthcare telemedicine ecommerce store with a user-friendly medicine purchase questionnaire and an order management admin panel, including email notifications and order tracking with payment gateway."
+            desc: "Artisan projects is a complete cloud-based electronic medical records, laboratory management, and practice management system, specialized for fertility practice"
         },
         {
             name: "4hamlet",
