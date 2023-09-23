@@ -1,7 +1,11 @@
 export default function Certificate() {
     const certificate = [
-        { name: "React Js", link: "./Images/certificate/react.jpg" },
+        { name: "JavaScript", link: "./Images/certificate/js_hackerrank.png" },
+        { name: "JavaScript", link: "./Images/certificate/js_udemy.png" },
         { name: "JavaScript", link: "./Images/certificate/javaScript.jpg" },
+        { name: "React Js", link: "./Images/certificate/react_hackerrank.png" },
+        { name: "React Js", link: "./Images/certificate/react.jpg" },
+        { name: "Node Js", link: "./Images/certificate/node.png" },
         { name: "Python", link: "./Images/certificate/python.jpg" },
         { name: "MySQL", link: "./Images/certificate/mySql.jpg" },
         { name: "Google", link: "./Images/certificate/google.png" },
