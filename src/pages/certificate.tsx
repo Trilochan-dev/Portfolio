@@ -1,5 +1,6 @@
 export default function Certificate() {
     const certificate = [
+        { name: "Frontend Developer", link: "./Images/certificate/react_dev_hackerrank.png" },
         { name: "JavaScript", link: "./Images/certificate/js_hackerrank.png" },
         { name: "JavaScript", link: "./Images/certificate/js_udemy.png" },
         { name: "JavaScript", link: "./Images/certificate/javaScript.jpg" },
