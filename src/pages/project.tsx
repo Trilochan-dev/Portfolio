@@ -55,16 +55,16 @@ export default function Project() {
             desc: "This project aims to create a calendar design like google and user can create, update and delete event."
         },
 
-        {
-            name: "Online Invoice App",
-            gitLink: "https://github.com/trilochan-behera-dev/invoice_app",
-            webLink: "https://simple-invoice-app.vercel.app/",
-            tags: ["Invoice", "Tax", "Profit"],
-            title: "Simple invoice app",
-            image: "./Images/project/invoice.png",
-            projectFor: "Personal",
-            desc: "This project aims to create a simple invoice data, show the calculate data and update or delete the data."
-        },
+        // {
+        //     name: "Online Invoice App",
+        //     gitLink: "https://github.com/trilochan-behera-dev/invoice_app",
+        //     webLink: "https://simple-invoice-app.vercel.app/",
+        //     tags: ["Invoice", "Tax", "Profit"],
+        //     title: "Simple invoice app",
+        //     image: "./Images/project/invoice.png",
+        //     projectFor: "Personal",
+        //     desc: "This project aims to create a simple invoice data, show the calculate data and update or delete the data."
+        // },
         {
             name: "Book Slot Now",
             gitLink: "https://github.com/trilochan-behera-dev/BookYourSlot",
