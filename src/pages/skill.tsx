@@ -26,9 +26,6 @@ export default function Skills() {
                 { name: "node js", link: "./Images/svg/nodejs.svg" },
                 { name: "express js", link: "./Images/svg/express.svg" },
                 { name: "python", link: "./Images/svg/python.svg" },
-                { name: "django", link: "./Images/svg/django.svg" },
-                { name: "laravel", link: "./Images/svg/laravel.svg" },
-                { name: "go lang", link: "./Images/svg/go.svg" },
             ]
         },
         {
@@ -36,24 +33,17 @@ export default function Skills() {
             value: [
                 { name: "mongodb", link: "./Images/svg/mongodb.svg" },
                 { name: "my sql", link: "./Images/svg/mysql.svg" },
-                { name: "postgress", link: "./Images/svg/postgress.svg" },
             ]
         },
         {
             key: "Others",
             value: [
-                { name: "redis", link: "./Images/svg/redis.svg" },
                 { name: "git", link: "./Images/svg/git.svg" },
                 { name: "docker", link: "./Images/svg/docker.svg" },
                 { name: "graphql", link: "./Images/svg/graphql.svg" },
                 { name: "elastic", link: "./Images/svg/elasticsearch.svg" },
                 { name: "cypress", link: "./Images/svg/cypress.svg" },
-                { name: "Looker", link: "./Images/svg/looker.svg" },
-                { name: "Pusher", link: "./Images/svg/pusher.svg" },
-                { name: "Salesforce", link: "./Images/svg/salesforce.svg" },
-                { name: "postman", link: "./Images/svg/postman.svg" },
-                { name: "Ubuntu", link: "./Images/svg/ubuntu.svg" },
-                { name: "Vs Code", link: "./Images/svg/vscode.svg" },
+                { name: "redis", link: "./Images/svg/redis.svg" },
             ]
         },
 
