@@ -39,7 +39,6 @@ Explore my digital canvas – a personal portfolio reflecting my skills, project
 
 Explore my portfolio live at [https://trilochan-behera.vercel.app/](https://trilochan-behera.vercel.app/)
 
-
 ### Clone the Repository
 
 ```bash
