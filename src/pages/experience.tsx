@@ -2,19 +2,19 @@ import { useState } from "react"
 import DropDown from "@/components/widgets/Dropdown";
 
 export default function Experience() {
-    const [selectedHeader, setSelectedHeader] = useState("Experience");
+    const [selectedHeader, setSelectedHeader] = useState("Education");
     const skillHeader = [
         {
-            key: "Experience",
+            key: "Education",
         },
         {
-            key: "Education",
+            key: "Experience",
         }
     ]
     return (
         <>
-            <div className="absolute inset-0 w-full pb-24 pt-16 bg-primary-light overflow-y-auto hide_scrollbar">
-                <p className="text-3xl text-center font-medium leading-relaxed mb-4 capitalize text-linear-gradient">Experience</p>
+            <div className="absolute inset-0 w-full bg-primary-light overflow-y-auto hide_scrollbar">
+                <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">Experience</p>
                 <div className="py-2 w-fit px-8 max-w-[1180px] m-auto hidden md:flex items-center justify-center shadow-lg rounded-lg  ">
                     {
                         skillHeader.map((sm, i) => (

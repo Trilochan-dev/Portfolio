@@ -4,7 +4,7 @@ export default function Certificate() {
         { name: "JavaScript", link: "./Images/certificate/js_hackerrank.png" },
         { name: "JavaScript", link: "./Images/certificate/js_udemy.png" },
         { name: "JavaScript", link: "./Images/certificate/javaScript.jpg" },
-        { name: "React Js", link: "./Images/certificate/react_hackerrank.png" },
+        // { name: "React Js", link: "./Images/certificate/react_hackerrank.png" },
         { name: "React Js", link: "./Images/certificate/react.jpg" },
         { name: "Node Js", link: "./Images/certificate/node.png" },
         { name: "Python", link: "./Images/certificate/python.jpg" },
@@ -17,8 +17,8 @@ export default function Certificate() {
 
 
     return (
-        <div className="absolute inset-0 w-full pb-24 pt-12 bg-primary-light overflow-y-auto hide_scrollbar">
-            <p className="text-3xl text-center font-medium leading-relaxed mb-4 capitalize text-linear-gradient">Online Certificates</p>
+        <div className="absolute inset-0 w-full bg-primary-light overflow-y-auto hide_scrollbar">
+            <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">Online Certificates</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 m-auto px-8 max-w-final">
                 {
                     certificate.map((cert, i) => (

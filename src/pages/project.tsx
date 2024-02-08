@@ -5,34 +5,14 @@ import { TbWorldWww } from "react-icons/tb"
 export default function Project() {
     const projects = [
         {
-            name: "Artisan",
-            gitLink: "",
-            webLink: "https://staging-v4.artisancw.net",
-            tags: ["Pregnancy", "Fertility", "HIPPA"],
-            title: "Sexual health medicare",
-            image: "./Images/project/epiq.jpeg",
-            projectFor: "Office",
-            desc: "Artisan projects is a complete cloud-based electronic medical records, laboratory management, and practice management system, specialized for fertility practice"
-        },
-        {
-            name: "4hamlet",
-            gitLink: "",
-            webLink: "https://4romeo.com/",
-            tags: ["Sexual", "Ecommerce", "HIPPA"],
-            title: "Sexual Health Medicare",
-            image: "./Images/project/hamlet.jpeg",
-            projectFor: "Office",
-            desc: "4hamlet projects based on online telemedicine and a variety of customized treatment plans for men's health.It's a healthcare telemedicine ecommerce store with a user-friendly medicine purchase questionnaire and an order management admin panel, including email notifications and order tracking with payment gateway."
-        },
-        {
-            name: "Epiq-Script",
-            gitLink: "",
-            webLink: "https://ecom.epiqscripts.com/",
-            tags: ["Ecommerce", "Skin & Hair", "HiPPA"],
-            title: "Sexual Health Ecommerce",
-            image: "./Images/project/epiq.jpeg",
-            projectFor: "Office",
-            desc: "A HIPAA-compliant telemedicine e-commerce store hair ,skin sexual health & erectile dysfunction Treatment with a user-friendly medicine purchase questionnaire and an order management admin panel, including email notifications and parcel tracking with payment gateway."
+            name: "Fintrack",
+            gitLink: "https://github.com/trilochan-behera-dev/FinTrack",
+            webLink: "https://fintracks.vercel.app/",
+            tags: ["Finance", "Savings", "Expense"],
+            title: "Finance Tracking platform",
+            image: "./Images/project/fintrack.png",
+            projectFor: "Personal",
+            desc: "Empower your financial journey with our intuitive finance tracking website. Seamlessly manage expenses, track income, and gain valuable insights into your financial health for a more secure and informed future."
         },
         {
             name: "Portfolio",
@@ -42,19 +22,18 @@ export default function Project() {
             title: "Personal Portfolio",
             image: "./Images/project/portfolio.png",
             projectFor: "Personal",
-            desc: "This project is my Personal Porfolio website."
+            desc: "Welcome to my personal portfolio website, where creativity meets functionality. Explore my diverse projects, delve into my skills and experiences, and discover how I bring innovation and passion to every endeavor."
         },
         {
-            name: "Cloud Calendar",
-            gitLink: "https://github.com/trilochan-behera-dev/CalendarApp",
-            webLink: "https://calendar-app-new.vercel.app/",
+            name: "TimeWise",
+            gitLink: "https://github.com/trilochan-behera-dev/Time-Wise",
+            webLink: "https://timewise.vercel.app/",
             tags: ["Google", "Calendar", "Events"],
             title: "Simple Calendar",
             image: "./Images/project/calendar.jpg",
             projectFor: "Personal",
             desc: "This project aims to create a calendar design like google and user can create, update and delete event."
         },
-
         // {
         //     name: "Online Invoice App",
         //     gitLink: "https://github.com/trilochan-behera-dev/invoice_app",
@@ -99,7 +78,7 @@ export default function Project() {
 
     return (
         <div className="bg-white absolute inset-0 w-full overflow-auto hide_scrollbar py-4 pb-8">
-            <p className="text-3xl text-center font-medium leading-relaxed mt-2 mb-4 capitalize text-linear-gradient">Projects</p>
+            <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">Projects</p>
             <div className="grid lg:grid-cols-2 xlg:grid-cols-3 gap-8 max-w-final m-auto px-8 sm:px-20 md:px-32 lg:px-8">
 
                 {
@@ -108,7 +87,7 @@ export default function Project() {
                             <div className="sm:flex items center gap-2">
                                 <div className="w-full sm:w-4/5 flex flex-col">
                                     <p className="text-md font-bold text-green-800 uppercase">{pro.name}</p>
-                                    <p className="font-bold text-lg text-gray-600 leading-6">Building a Saas Product Specially for <span className="sm:block text-base"> {pro.title} Platform</span></p>
+                                    <p className="font-bold text-lg text-gray-600 leading-6"><span className="sm:block text-base"> {pro.title} </span></p>
                                     <p className={`font-semibold text-sm ${pro.projectFor === "Office" ? "text-blue-500" : "text-green-500"}`}> # {pro.projectFor} Project</p>
                                 </div>
                                 <div className="w-full sm:w-1/5 h-20 my-auto">
