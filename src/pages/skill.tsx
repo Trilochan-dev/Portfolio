@@ -1,6 +1,3 @@
-import DropDown from "@/components/widgets/Dropdown";
-import { useState } from "react"
-
 export default function Skills() {
     const skills = [
         {
@@ -34,8 +31,8 @@ export default function Skills() {
                 <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">Technical Skills</p>
                 <div className="w-full max-w-[1180px] mx-auto">
                     {
-                        skills.map((sdata) => (
-                            <div className="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-6 gap-4 py-4 place-items-center">
+                        skills.map((sdata,i) => (
+                            <div className="grid grid-cols-3 xs:grid-cols-4 md:grid-cols-6 gap-4 py-4 place-items-center" key={i}>
                                 {sdata.value.map((svalue, i) => (
                                     <div className="relative test aspect-square rounded-lg group bg-primary-light hover:bg-primary-dark flex flex-col gap-2 h-[75%] items-center justify-center shadow-lg shadow-[#8e8e8e] uppercase cursor-pointer" key={svalue.name + i}>
                                         <img src={svalue.link} className='h-[60%] w-[60%] group-hover:hidden' />
