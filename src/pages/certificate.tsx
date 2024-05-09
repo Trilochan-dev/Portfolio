@@ -19,7 +19,7 @@ export default function Certificate() {
     return (
         <div className="absolute inset-0 w-full bg-primary-light overflow-y-auto hide_scrollbar">
             <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">Online Certificates</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 m-auto px-8 max-w-final">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 m-auto px-8 max-w-final pt-8 pb-16">
                 {
                     certificate.map((cert, i) => (
                         <div className=" p-6 shadow-2xl aspect-auto hover:bg-white shadow-gray-400 cursor-pointer " key={i}>

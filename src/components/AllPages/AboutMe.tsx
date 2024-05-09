@@ -3,10 +3,10 @@ import CVButton from "../widgets/CVButton"
 import { IoLogoGithub, IoLogoWhatsapp } from 'react-icons/io';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { MdOutgoingMail } from 'react-icons/md';
-import { TbCertificate } from 'react-icons/tb';
 import { MdCall } from 'react-icons/md';
 import { useEffect, useState } from 'react';
-
+import { skills, projects } from "../../resources/resource"
+import Process from './Process';
 
 export default function AboutMe() {
     const personalDetails = [
@@ -25,10 +25,8 @@ export default function AboutMe() {
         const currentDate = new Date();
 
         const diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
-            currentDate.getMonth() - startDate.getMonth();
-        const decimalExperience = diffInMonths % 12 === 0 ? Math.round(diffInMonths / 12) : (diffInMonths % 12) <= 6 ? Math.floor(diffInMonths / 12) + 0.5 : Math.floor(diffInMonths / 12) + 1;
-
-
+        currentDate.getMonth() - startDate.getMonth();
+        const decimalExperience = diffInMonths % 12 === 0 ? (diffInMonths / 12) : (diffInMonths % 12) <= 6 ? (diffInMonths / 12) + 0.5 : (diffInMonths / 12) + 1;
         let years = currentDate.getFullYear() - birthDate.getFullYear();
         let months = currentDate.getMonth() - birthDate.getMonth();
 
@@ -39,8 +37,8 @@ export default function AboutMe() {
 
     return (
         <>
-            <div className="md:p-16">
-                <div className="p-8 bg-white shadow mt-24">
+            <div className="md:p-8">
+                <div className="p-4 bg-white shadow mt-24">
                     <div className="grid grid-cols-1 md:grid-cols-3">
                         <div className="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                             <div>
@@ -48,12 +46,12 @@ export default function AboutMe() {
                                 <p className="text-gray-400">Experience</p>
                             </div>
                             <div>
-                                <Link href={"/skill"}> <p className="font-bold text-gray-700 text-xl hover:text-blue-500">25+</p></Link>
+                                <Link href="/skill"> <p className="font-bold text-gray-700 text-xl hover:text-blue-500">{skills?.length}+</p></Link>
                                 <p className="text-gray-400">Skills</p>
                             </div>
                             <div>
-                                <Link href="https://www.linkedin.com/in/trilochanbehera/" target='__blank'> <p className="font-bold text-gray-700 text-xl hover:text-blue-500">500+</p></Link>
-                                <p className="text-gray-400">Connections</p>
+                                <Link href="/project"> <p className="font-bold text-gray-700 text-xl hover:text-blue-500">{projects?.length}+</p></Link>
+                                <p className="text-gray-400">Projects</p>
                             </div>
                         </div>
                         <div className="relative">
@@ -75,24 +73,26 @@ export default function AboutMe() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20 text-center border-b pb-12">
-                        <h1 className="text-4xl font-medium text-gray-700">Trilochan Behera, <span className="font-light text-gray-500">{age}</span></h1>
-                        <p className='font-bold shadow-2xl'>{`< MERN Developer 🚀/>`}</p>
+                    <div className="mt-12 text-center border-b pb-12">
+                        <h1 className="text-4xl font-medium text-gray-700">Trilochan Behera</h1>
+                        {/* , <span className="font-semibold text-gray-500 text-3xl">{age}</span> */}
+                        <p className='font-bold shadow-2xl text-black'>{`< MERN Developer 🚀/>`}</p>
                         <p className="mt-2 text-black">Master of Computer Application (MCA)</p>
-                        <p className="mt-6 text-gray-500">Bhubaneswar, Odisha, India</p>
-                        <p className="mt-2 text-gray-500">Coding, Mentoring and Music ...</p>
+                        <p className="mt-2 text-gray-500">Bhubaneswar, Odisha, India</p>
+                        <p className="mt-2 text-gray-500">Coding, Exploring and Music ...</p>
                     </div>
-                    <div className="mt-12 flex flex-col justify-center">
+                    <div className="mt-8 flex flex-col justify-center">
                         <p className="text-gray-600 text-center font-light lg:px-16">
-                            Experienced MERN Stack Developer with more than two years of proven expertise in building full-stack applications using modern
-                            JavaScript frameworks. Skilled in problem-solving, mentoring junior developers, and collaborating with global teams. Specialized in domains like e-commerce, healthcare, forums, finance and music.
+                            Experienced MERN Stack Developer with around {experience} years of proven expertise in building full-stack applications using modern
+                            JavaScript frameworks. Skilled in problem-solving,Team collaboration, Leadership and collaborating with global teams. Specialized in domains like e-commerce, healthcare, forums, finance and entertainment.
                         </p>
-                        <div className='text-center'>
+                        {/* <div className='text-center'>
                             <Link href={"/skill"}><button className="text-indigo-500 py-2 px-4  font-medium mt-4">
                                 View Skills
                             </button></Link>
-                        </div>
+                        </div> */}
                     </div>
+                    <Process/>
                 </div>
             </div>
         </>

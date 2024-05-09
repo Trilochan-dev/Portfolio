@@ -123,8 +123,8 @@ const DropDown: FC<{
                                             id={"label" + index}
                                             data-name={item[props.label]}
                                             style={{
-                                                backgroundColor: `${highlightOption === index || item[props.label] === label ? "#EEEEEE" : "#OD2483"}`,
-                                                color: `${highlightOption === index || item[props.label] === label ? "#000" : "#fff"}`,
+                                                backgroundColor: `${highlightOption === index || item[props.label] === label ? "" : "#EEEEEE"}`,
+                                                color: `${highlightOption === index || item[props.label] === label ? "#fff" : "#000"}`,
                                             }}
                                         >
                                             {item[props.label]}

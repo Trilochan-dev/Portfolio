@@ -13,7 +13,7 @@ export default function About() {
     ]
     return (
         <div className="bg-white absolute inset-0 w-full m-auto overflow-auto hide_scrollbar ">
-            <p className="text-3xl text-center font-medium leading-relaxed my-3 capitalize text-linear-gradient">About Me</p>
+            <p className="text-3xl text-center font-medium leading-relaxed my-2 capitalize text-linear-gradient">About Me</p>
             <div className="lg:11/12 xl:w-9/12 lg:mx-auto">
                 <div className="px-0 md:px-3">
                     <AboutMe />
