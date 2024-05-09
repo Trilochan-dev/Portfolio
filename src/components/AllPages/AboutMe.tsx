@@ -81,7 +81,7 @@ export default function AboutMe() {
                         <p className="mt-2 text-gray-500">Bhubaneswar, Odisha, India</p>
                         <p className="mt-2 text-gray-500">Coding, Exploring and Music ...</p>
                     </div>
-                    <div className="mt-8 flex flex-col justify-center">
+                    <div className="mt-8 flex flex-col justify-center pb-4">
                         <p className="text-gray-600 text-center font-light lg:px-16">
                             Experienced MERN Stack Developer with around {experience} years of proven expertise in building full-stack applications using modern
                             JavaScript frameworks. Skilled in problem-solving,Team collaboration, Leadership and collaborating with global teams. Specialized in domains like e-commerce, healthcare, forums, finance and entertainment.
