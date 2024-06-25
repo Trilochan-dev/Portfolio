@@ -26,7 +26,7 @@ export default function AboutMe() {
 
         const diffInMonths = (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
         currentDate.getMonth() - startDate.getMonth();
-        const decimalExperience = diffInMonths % 12 === 0 ? (diffInMonths / 12) : (diffInMonths % 12) <= 6 ? (diffInMonths / 12) : (diffInMonths / 12) + 1;
+        const decimalExperience = diffInMonths % 12 === 0 ? (diffInMonths / 12) : (diffInMonths % 12) <= 6 ? Math.floor(diffInMonths / 12)+ 0.5 : Math.floor(diffInMonths / 12) + 1;
         let years = currentDate.getFullYear() - birthDate.getFullYear();
         let months = currentDate.getMonth() - birthDate.getMonth();
 
